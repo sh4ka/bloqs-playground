@@ -46,6 +46,31 @@
                         <button class="btn btn-default" type="button" onclick="createBloq();">Add new bloq</button>
                         <button class="btn btn-default" type="button" onclick="removeBloqs();">Remove bloqs</button>
                     </div>
+                    <div class="col-lg-12">
+                        <h4>Bloq factory</h4>
+                        <form class="form-inline">
+                            <div class="form-group col-xs-5">
+                                <label for="bloq_label">Label</label>
+                                <input type="text" class="form-control" id="bloq_label" placeholder="Bloq Label">
+                            </div>
+                            <div class="form-group col-xs-5">
+                                <label for="bloq_color">Color</label>
+                                <input type="text" class="form-control" id="bloq_color" placeholder="#ff00ff (empty for rnd)">
+                            </div>
+                            <div class="form-group col-xs-6">
+                                <label for="bloq_code_setup">Setup code</label>
+                                <textarea class="form-control" id="bloq_code_setup" name="bloq_code_setup"></textarea>
+                            </div>
+                            <div class="form-group col-xs-6">
+                                <label for="bloq_code_loop">Loop code</label>
+                                <textarea class="form-control" id="bloq_code_loop" name="bloq_code_loop"></textarea>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-lg-12">
+                        <h4>Factory code</h4>
+                        <textarea cols="150" id="factory-code" disabled rows="20"></textarea>
+                    </div>
                 </div>
                 <div role="tabpanel" class="tab-pane" id="codeTab">...</div>
             </div>
@@ -54,7 +79,7 @@
     </div>
 
     <div class="footer">
-        <p><span class="glyphicon glyphicon-heart"></span> from the Yeoman team</p>
+        <p><span class="glyphicon glyphicon-heart"></span> from the <a href="https://www.github.com/bq" target="_blank">bq</a> team</p>
     </div>
 
 </div>
@@ -64,7 +89,7 @@
 <!-- bower:js -->
 <script src="bower_components/jquery/dist/jquery.js"></script>
 <script src="bower_components/svg.js/dist/svg.js"></script>
-<script src="bower_components/svg.draggable.js/svg.draggable.js"></script>
+<script src="bower_components/svg.draggable/svg.draggable.js"></script>
 <script src="bower_components/bloqs/dist/bloqs.js"></script>
 <!-- endbower -->
 <!-- endbuild -->
